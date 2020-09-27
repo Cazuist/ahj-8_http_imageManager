@@ -1,0 +1,177 @@
+.manager-box {
+  width: 600px;
+
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  font-family: "Arial", sans-serif;
+  border: 2px solid brown;
+  background-color: cyan;
+}
+
+.manager-header {  
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 460px;
+
+  color: white;
+  text-align: right;
+  font-size: 20px;
+  background-color: blue;
+
+  cursor: move;
+}
+
+
+fieldset {
+  position: relative;
+  
+  width: 400px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 30px;
+  background-color: white;
+}
+
+.form-label {
+  color: gray;
+  font-size: 16px; 
+
+  text-align: right;
+}
+
+input {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+
+  margin: 0 auto;
+  border-radius: 15px;
+  outline: 0;
+
+  cursor: pointer;
+}
+
+.input-mask {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  
+  box-sizing: border-box;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+
+  align-items: center;
+  border-radius: 15px;
+  border: 2px dashed darkgray;
+  background-color: white;
+  text-align: center;
+
+  pointer-events: none;
+}
+
+.img-ribbon {
+  display: flex;
+  width: 580px;
+  margin: 0 auto;
+  padding-left: 20px;
+
+  flex-wrap: wrap;
+}
+
+.img-box {
+  position: relative;
+  box-sizing: border-box;
+  width: 125px;
+  height: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  border: 2px solid gray;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.del-box {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+
+  box-sizing: border-box;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+
+  color: gray;
+  border: 2px solid gray;
+  border-radius: 50%;
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.error-message {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 100px);
+
+  width: 200px;
+  display: flex;
+  justify-content: center; 
+
+  color: red;
+  font-style: italic;
+  text-align: right;
+}
+
+.drop-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+  padding-left: 27%;
+  padding-right: 27%;   
+  
+  color: gray;
+  font-size: 18px;
+  text-align: center;
+  background-color: white;
+  border-radius: inherit;
+
+  cursor: default;
+}
+
+.error-message {
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+} 
