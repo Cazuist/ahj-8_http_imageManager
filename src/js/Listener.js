@@ -50,8 +50,8 @@ export default class Listeners {
       const { name } = file;
       const reader = new FileReader();
 
-      reader.onload = () => {
-        const src = event.target.result;
+      reader.onload = (ev) => {
+        const src = ev.target.result;
         const boxObj = new ImageBox(name, src);
 
         const formData = new FormData();
@@ -90,8 +90,8 @@ export default class Listeners {
       const { name } = file;
       const reader = new FileReader();
 
-      reader.onload = () => {
-        const src = event.target.result;
+      reader.onload = (ev) => {
+        const src = ev.target.result;
         const boxObj = new ImageBox(name, src);
 
         const formData = new FormData();
